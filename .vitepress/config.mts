@@ -9,14 +9,15 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Basics', link: '/basics/fundamentals/README.md' },
+      // { text: 'Home', link: '/' },
+      { text: 'Основи Linux', link: '/basics' },
       { text: 'Troubleshooting', link: '/performance/README.md' }
     ],
 
     sidebar: {
       '/basics':
         [
+          { text: 'Основи Linux', link: '/basics' },
           {
             text: 'Fundamentals',
             collapsed: true,
@@ -72,6 +73,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/acvetochka/Linux-book' }
     ],
+
+    search: {
+      provider: 'local'
+    },
 
     footer: {
       message: 'Released under CC BY 4.0 License',

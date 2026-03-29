@@ -8,8 +8,8 @@ hero:
   tagline: Структурована база знань з Linux, мереж і системного адміністрування
   actions:
     - theme: brand
-      text: До розділу Basics
-      link: /fundamentals/README
+      text: Перейти до основ Linux
+      link: /basics
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
