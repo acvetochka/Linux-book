@@ -76,9 +76,7 @@ export default withMermaid(
               {
                 text: "Утиліти", items: [
                   { text: "fdisk", link: "/files/file-system/fdisk" },
-                  { text: "dubugfs", link: "/files/file-system/debugfs" }
-
-
+                  { text: "dubugfs", link: "/files/file-system/debugfs" },
                 ]
               }
             ]
@@ -130,6 +128,7 @@ export default withMermaid(
                 text: "Утиліти", items: [
                   { text: "grep", link: "/files/text-processing/grep" },
                   { text: "sed", link: "/files/text-processing/sed" },
+                  { text: "awk", link: "/files/text-processing/awk" },
 
                 ]
               }
