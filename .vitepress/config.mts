@@ -14,7 +14,7 @@ export default withMermaid(
       nav: [
         // { text: 'Home', link: '/' },
         { text: 'Основи Linux', link: '/basics' },
-        { text: 'Файлова система та Storage', link: '/files/file-system/FileSystem' },
+        { text: 'Файлова система та Storage', link: '/files' },
         { text: 'Troubleshooting', link: '/performance/README.md' }
       ],
 
