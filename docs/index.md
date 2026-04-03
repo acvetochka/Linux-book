@@ -61,3 +61,46 @@ features:
 - performance і troubleshooting;
 - довідкові матеріали та колекції команд.
 
+```
+Linux Guide
+├─ 1. Basics
+│  ├─ Fundamentals
+│  ├─ Environment
+│  ├─ Shell
+│  └─ Shell Scripting
+│
+├─ 2. Files and Storage
+│  ├─ File System
+│  ├─ Storage
+│  ├─ File Management
+│  ├─ Text Processing
+│  └─ Archives
+│
+├─ 3. Users and Security
+│  ├─ Users
+│  ├─ Permissions
+│  └─ Security
+│
+├─ 4. System and Processes
+│  ├─ Processes
+│  ├─ Process Control
+│  ├─ System
+│  └─ Logs
+│
+├─ 5. Networking
+│  └─ Networking
+│
+├─ 6. Package Management
+│  └─ Package Management
+│
+├─ 7. Troubleshooting and Performance
+│  ├─ CPU Issues
+│  ├─ Memory Issues
+│  ├─ Disk Issues
+│  ├─ Network Issues
+│  ├─ Process Issues
+│  └─ System Startup Issues
+└─ 8. Reference
+   ├─ Documentation
+   └─ Collections
+```
