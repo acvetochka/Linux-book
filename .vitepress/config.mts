@@ -1,86 +1,173 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid"
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  srcDir: "docs",
+export default withMermaid(
+  defineConfig({
+    srcDir: "docs",
 
-  title: "Linux Book",
-  // description: "Linux Book",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      // { text: 'Home', link: '/' },
-      { text: 'Основи Linux', link: '/basics' },
-      { text: 'Troubleshooting', link: '/performance/README.md' }
-    ],
+    title: "Linux Book",
+    // description: "Linux Book",
+    themeConfig: {
+      // https://vitepress.dev/reference/default-theme-config
+      outline: [2, 4],
+      nav: [
+        // { text: 'Home', link: '/' },
+        { text: 'Основи Linux', link: '/basics' },
+        { text: 'Файлова система та Storage', link: '/files/file-system/FileSystem' },
+        { text: 'Troubleshooting', link: '/performance/README.md' }
+      ],
 
-    sidebar: {
-      '/basics':
-        [
-          { text: 'Основи Linux', link: '/basics' },
+      sidebar: {
+        '/basics':
+          [
+            { text: 'Основи Linux', link: '/basics' },
+            {
+              text: 'Fundamentals',
+              collapsed: true,
+              link: "/basics/fundamentals/README.md",
+              items: [
+                { text: 'Структура Linux', link: '/basics/fundamentals/Linux-structure' },
+                { text: 'Сімейства дистрибутивів', link: '/basics/fundamentals/Сімейства дистрибутивів' }
+              ]
+            },
+            {
+              text: "Environment",
+              collapsed: true,
+              link: "/basics/environment/README.md",
+              items: [
+                { text: 'WSL', link: '/basics/environment/WSL' },
+                { text: 'Налаштування SSH-proxy', link: '/basics/environment/Налаштування SSH-proxy' }
+              ]
+            },
+            {
+              text: "Shell",
+              link: "/basics/shell/README.md",
+              collapsed: true,
+              items: [
+                { text: 'Стандартні потоки', link: '/basics/shell/Standard Streams' },
+                { text: 'Оператори та символи', link: '/basics/shell/Оператори та символи' },
+                { text: 'Зміна Bash-промпту', link: '/basics/shell/Change Bash-prompt' },
+                { text: 'history', link: '/basics/shell/history' }
+              ]
+            },
+            {
+              text: "Shell Scripting",
+              link: '/basics/shell-scripting/README.md',
+              collapsed: true,
+              items: []
+
+            },
+
+          ],
+        '/files': [
+          { text: "Файлова система та Storage", link: '/files' },
           {
-            text: 'Fundamentals',
+            text: 'File System',
             collapsed: true,
-            link: "/basics/fundamentals/README.md",
+            link: "/files/file-system/README.md",
             items: [
-              { text: 'Структура Linux', link: '/basics/fundamentals/Linux-structure' },
-              { text: 'Сімейства дистрибутивів', link: '/basics/fundamentals/Сімейства дистрибутивів' }
+              { text: "Файлова система", link: "/files/file-system/FileSystem" },
+              { text: "Ієрархія Linux", link: "/files/file-system/LinuxHierarchy" },
+              { text: "Концепція модульних конфігурацій", link: "/files/file-system/Концепція модульних конфігурацій" },
+              { text: "Монтування файлової системи", link: "/files/file-system/Монтування файлової системи" },
+              { text: "Inode", link: "/files/file-system/Inode" },
+              { text: "Посилання", link: "/files/file-system/Links" },
+              {
+                text: "Утиліти", items: [
+                  { text: "fdisk", link: "/files/file-system/fdisk" },
+                  { text: "dubugfs", link: "/files/file-system/debugfs" }
+
+
+                ]
+              }
+            ]
+
+          },
+          {
+            text: 'Storage',
+            collapsed: true,
+            link: "/files/storage/README.md",
+            items: [
+              { text: "df", link: "/files/storage/df" },
+              { text: "du", link: "/files/storage/du" },
+              { text: "lsblk", link: "/files/storage/lsblk" }
             ]
           },
           {
-            text: "Environment",
+            text: 'File Management',
             collapsed: true,
-            link: "/basics/environment/README.md",
+            link: "/files/file-management/README.md",
             items: [
-              { text: 'WSL', link: '/basics/environment/WSL' },
-              { text: 'Налаштування SSH-proxy', link: '/basics/environment/Налаштування SSH-proxy' }
+              { text: "Робота з файлами", link: "/files/file-management/Робота з файлами" },
+              { text: "Способи відображення файлів команд Linux", link: "/files/file-management/Способи відображення файлів команд Linux" },
+              {
+                text: "Утиліти", items: [
+                  { text: "find", link: "/files/file-management/find" },
+                  { text: "install", link: "/files/file-management/install" },
+                  { text: "ls", link: "/files/file-management/ls" }
+                ]
+              }
             ]
-          },
-          {
-            text: "Shell",
-            link: "/basics/shell/README.md",
-            collapsed: true,
-            items: [
-              { text: 'Стандартні потоки', link: '/basics/shell/Standard Streams' },
-              { text: 'Оператори та символи', link: '/basics/shell/Оператори та символи' },
-              { text: 'Зміна Bash-промпту', link: '/basics/shell/Change Bash-prompt' },
-              { text: 'history', link: '/basics/shell/history' }
-            ]
-          },
-          {
-            text: "Shell Scripting",
-            link: '/basics/shell-scripting/README.md',
-            collapsed: true,
-            items: []
+
 
           },
+          {
+            text: 'Text Processing',
+            collapsed: true,
+            link: "/files/text-processing/README.md",
+            items: [
+              {
+                text: "Регулярні вирази",
+                items: [
+                  { text: "Регулярні вирази", link: "/files/text-processing/Регулярні вирази" },
+                  { text: "BRE-ERE-PCRE", link: "/files/text-processing/BRE-ERE-PCRE" },
+                  { text: "POSIX", link: "/files/text-processing/POSIX" },
+                  { text: "Велика таблиця: grep / sed / awk + regex", link: "/files/text-processing/Велика таблиця-grep, sed, awk+ regex" },
+                ],
+              },
+              {
+                text: "Утиліти", items: [
+                  { text: "grep", link: "/files/text-processing/grep" },
+                  { text: "sed", link: "/files/text-processing/sed" },
+
+                ]
+              }
+
+            ]
+          }
 
         ],
-      '/performance/': [
-        {
-          text: "Performance",
-          link: '/performance/README.md',
-          collapsed: true,
-          items: [
-            { text: "Траблшутінг швидкодії", link: '/performance/Troubleshooting' },
-            { text: "Траблшутінг по рівням", link: '/performance/Troubleshooting by levels' },
-            { text: "OOM killer", link: '/performance/OOM killer' }
-          ]
-        }
-      ]
-    },
+        '/performance/': [
+          {
+            text: "Performance",
+            link: '/performance/README.md',
+            collapsed: true,
+            items: [
+              { text: "Траблшутінг швидкодії", link: '/performance/Troubleshooting' },
+              { text: "Траблшутінг по рівням", link: '/performance/Troubleshooting by levels' },
+              { text: "OOM killer", link: '/performance/OOM killer' },
+              {
+                text: "Utilites", items: [
+                  { text: "sar", link: '/performance/sar' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/acvetochka/Linux-book' }
-    ],
+      socialLinks: [
+        { icon: 'github', link: 'https://github.com/acvetochka/Linux-book' }
+      ],
 
-    search: {
-      provider: 'local'
-    },
+      search: {
+        provider: 'local'
+      },
 
-    footer: {
-      message: 'Released under CC BY 4.0 License',
-      copyright: '© 2026 <a href="https://www.kuznietsova.org" target="_blank" rel="noopener">Alona Kuznietsova</a>'
+      footer: {
+        message: 'Released under CC BY 4.0 License',
+        copyright: '© 2026 <a href="https://www.kuznietsova.org" target="_blank" rel="noopener">Alona Kuznietsova</a>'
+      }
     }
-  }
-})
+  }))
