@@ -100,6 +100,7 @@ Linux Guide
 │  ├─ Network Issues
 │  ├─ Process Issues
 │  └─ System Startup Issues
+|
 └─ 8. Reference
    ├─ Documentation
    └─ Collections
