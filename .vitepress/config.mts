@@ -140,7 +140,18 @@ export default withMermaid(
 
         ],
         '/system/': [
-          { text: "", link: "/system" },
+          { text: "Система та процеси", link: "/system" },
+          {
+            text: "Процеси",
+            collapsed: true,
+            link: '/system/processes/README.md',
+            items: [
+              { text: "1. Основи процесів", link: "/system/processes/1. Основи процесів" },
+              { text: "2. Типи процесів у Linux", link: "/system/processes/2. Типи процесів у Linux" },
+              { text: "3. Життєвий цикл процесу в Linux", link: "/system/processes/3. Життєвий цикл процесу в Linux" },
+              { text: "Статуси процесів у Linux", link: "/system/processes/Statuses" }
+            ]
+          },
           {
             text: "Система",
             link: '/system/system/README.md',
@@ -159,18 +170,13 @@ export default withMermaid(
                   { text: "tmux", link: "/system/system/tmux" }
 
                 ]
+              },
+              {
+                text: "Плануваальники задач", items: [
+                  { text: "cron", link: "/system/system/cron" },
+                  { text: "at", link: "/system/system/at" }
+                ]
               }
-            ]
-          },
-          {
-            text: "Процеси",
-            collapsed: true,
-            link: '/system/processes/README.md',
-            items: [
-              { text: "1. Основи процесів", link: "/system/processes/1. Основи процесів" },
-              { text: "2. Типи процесів у Linux", link: "/system/processes/2. Типи процесів у Linux" },
-              { text: "3. Життєвий цикл процесу в Linux", link: "/system/processes/3. Життєвий цикл процесу в Linux" },
-              { text: "Статуси процесів у Linux", link: "/system/processes/Statuses" }
             ]
           }
         ],
