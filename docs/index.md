@@ -10,9 +10,12 @@ hero:
     - theme: brand
       text: Перейти до основ Linux
       link: /basics
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    - theme: alt
+      text: Файлова система та сховище
+      link: /files
+    - theme: alt
+      text: Система та процеси
+      link: /system
 
 features:
   - icon: 📘

@@ -155,8 +155,8 @@ export default withMermaid(
               },
               {
                 text: "Мультиплексори", items: [
-                  { text: "screen", link: "/system/system/" },
-                  { text: "tmux", link: "/system/system/" }
+                  { text: "screen", link: "/system/system/screen" },
+                  { text: "tmux", link: "/system/system/tmux" }
 
                 ]
               }
