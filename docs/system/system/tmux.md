@@ -243,6 +243,58 @@ new-window -n logs "tail -f /var/log/syslog"
 new-window -n htop "htop"
 ```
 
+## Керування панелями через Alt
+Щоб налаштувати керування панелями через Alt без необхідності щоразу натискати префікс (Ctrl+b), вам потрібно додати спеціальні параметри з прапорцем -n (no-prefix) у файл конфігурації.
+### 1. Редагування конфігурації
+Відкрийте (або створіть) файл конфігурації tmux:
+```bash
+nano ~/.tmux.conf
+```
+
+### 2. Навігація між панелями (Alt + стрілки)
+Додайте ці рядки, щоб миттєво перестрибувати між панелями:
+
+```bash
+# Перемикання панелей за допомогою Alt-стрілок без префікса
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+```
+(Тут M означає Meta-клавішу, яка у більшості терміналів відповідає Alt).
+
+### 3. Зміна розміру панелей (Alt + Shift + стрілки)
+Це дозволить зручно підганяти розмір вікон:
+```bash
+# Зміна розміру панелей через Alt + Shift + стрілки
+bind -n M-S-Left resize-pane -L 5
+bind -n M-S-Right resize-pane -R 5
+bind -n M-S-Up resize-pane -U 5
+bind -n M-S-Down resize-pane -D 5
+```
+
+### 4. Швидке створення та закриття
+Можна також додати зручні комбінації для створення панелей:
+```bash
+# Alt + h для горизонтального поділу, Alt + v для вертикального
+bind -n M-h split-window -h
+bind -n M-v split-window -v
+
+# Alt + w для закриття поточної панелі
+bind -n M-w kill-pane
+```
+
+### 5. Застосування змін
+Після збереження файлу (Ctrl+O, Enter, Ctrl+X), обов'язково оновіть конфігурацію:
+-  в самому tmux:  
+Натисніть `Ctrl+b`, потім `:`, введіть `source-file ~/.tmux.conf` і натисніть Enter.
+
+- Поза tmux:
+  ```bash
+  tmux source-file ~/.tmux.conf
+  ```
+Або просто перезапустіть tmux.
+
 ## Plugins (суперсила tmux)
 
 👉 через [TPM (Tmux Plugin Manager)](TPM)
@@ -299,8 +351,10 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 ## Типові проблеми
 ❗ Alt не працює
 - увімкнути "Meta sends escape" в терміналі
+  
 ❗ Copy не працює
 - використовуй `mode-keys vi`
+  
 ❗ Конфіг не застосувався
 ```bash
 tmux source-file ~/.tmux.conf
