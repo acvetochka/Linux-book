@@ -130,7 +130,8 @@ export default withMermaid(
                   { text: "grep", link: "/files/text-processing/grep" },
                   { text: "sed", link: "/files/text-processing/sed" },
                   { text: "awk", link: "/files/text-processing/awk" },
-                  { text: "date", link: "/files/text-processing/date" }
+                  { text: "date", link: "/files/text-processing/date" },
+                  { text: "sort", link: "/files/text-processing/sort" }
 
                 ]
               }
