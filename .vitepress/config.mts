@@ -56,7 +56,20 @@ export default withMermaid(
               text: "Shell Scripting",
               link: '/basics/shell-scripting/README.md',
               collapsed: true,
-              items: []
+              items: [
+                { text: 'Вступ до Bash-скриптів', link: "/basics/shell-scripting/Вступ до Bash-скриптів" },
+                { text: 'Змінні та типи даних', link: "/basics/shell-scripting/Змінні та типи даних" },
+                { text: 'Антипатерни Bash', link: "/basics/shell-scripting/Антипатерни Bash" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+                { text: '', link: "/basics/shell-scripting/" },
+              ]
 
             },
 
