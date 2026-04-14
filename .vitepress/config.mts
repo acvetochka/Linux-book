@@ -194,6 +194,17 @@ export default withMermaid(
             ]
           }
         ],
+        '/networking/': [
+          {
+            text: "Networking",
+            link: '/networking/README.md',
+            collapsed: true,
+            items: [
+              { text: "Основи комп'ютерних мереж", link: "/networking/Основи компютерних мереж" },
+              { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" }
+            ]
+          }
+        ],
         '/performance/': [
           {
             text: "Performance",
