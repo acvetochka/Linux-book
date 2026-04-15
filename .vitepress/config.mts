@@ -204,12 +204,23 @@ export default withMermaid(
               { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" },
               { text: "NetworkManager", link: "/networking/NetworkManager" },
               {
+                text: "Протооли мереж",
+                link: "/networking/protocols/README",
+                items: [
+                  {}
+                ]
+
+              },
+              {
                 text: "Утиліти", items: [
                   { text: "ip", link: "/networking/ip" },
                   { text: "traceoute", link: "/networking/traceroute" },
                   { text: "ss", link: "/networking/ss" },
                   { text: "tcpdump", link: "/networking/tcpdump" },
-                  { text: "nmcli", link: "/networking/nmcli" }
+                  { text: "nmcli", link: "/networking/nmcli" },
+                  { text: "dig", link: "/networking/dig" },
+                  { text: "lshw", link: "/networking/lshw" },
+                  { text: "dmicode", link: "/networking/dmicode" }
 
                 ]
               }
