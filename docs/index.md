@@ -16,7 +16,10 @@ hero:
     - theme: alt
       text: Система та процеси
       link: /system
-
+    - theme: alt
+      text: Мережі
+      link: /networking/README.md
+ 
 features:
   - icon: 📘
     title: Структуровано
