@@ -202,13 +202,14 @@ export default withMermaid(
             items: [
               { text: "Основи комп'ютерних мереж", link: "/networking/Основи компютерних мереж" },
               { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" },
+              { text: "NetworkManager", link: "/networking/NetworkManager" },
               {
                 text: "Утиліти", items: [
                   { text: "ip", link: "/networking/ip" },
                   { text: "traceoute", link: "/networking/traceroute" },
                   { text: "ss", link: "/networking/ss" },
                   { text: "tcpdump", link: "/networking/tcpdump" },
-                  { text: "", link: "/networking/ip" }
+                  { text: "nmcli", link: "/networking/nmcli" }
 
                 ]
               }
