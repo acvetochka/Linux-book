@@ -208,14 +208,28 @@ export default withMermaid(
                 text: "Протооли мереж",
                 link: "/networking/protocols/README",
                 items: [
-                  {}
+                  { text: "ARP", link: "/netorking/protocols/ARP" },
+                  { text: "IP", link: "/networking/potocols/IP" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+                  { text: "", link: "/networking/potocols/" },
+
+
                 ]
 
               },
               {
                 text: "Утиліти", items: [
                   { text: "ip", link: "/networking/ip" },
-                  { text: "traceoute", link: "/networking/traceroute" },
+                  { text: "traceroute", link: "/networking/traceroute" },
                   { text: "ss", link: "/networking/ss" },
                   { text: "tcpdump", link: "/networking/tcpdump" },
                   { text: "nmcli", link: "/networking/nmcli" },
