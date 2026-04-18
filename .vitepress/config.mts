@@ -211,7 +211,7 @@ export default withMermaid(
                   { text: "ARP", link: "/netorking/protocols/ARP" },
                   { text: "IP", link: "/networking/potocols/IP" },
                   { text: "ICMP", link: "/networking/potocols/ICMP" },
-                  { text: "", link: "/networking/potocols/" },
+                  { text: "TCP та UDP", link: "/networking/potocols/TCP and UDP" },
                   { text: "", link: "/networking/potocols/" },
                   { text: "", link: "/networking/potocols/" },
                   { text: "", link: "/networking/potocols/" },
