@@ -275,7 +275,7 @@ export default withMermaid(
               { text: "Розділ 9: СИСТЕМА (systemd, cron, tmux, screen)", link: "/reference/collections/system" },
               { text: "Розділ 10: МЕРЕЖІ", link: "/reference/collections/network" },
               { text: "Розділ 11: ВІДДАЛЕНИЙ ДОСТУП", link: "/reference/collections/remote" },
-
+              { text: "Розділ 12: ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: "/reference/collections/configs" }
             ]
           }
         ]
