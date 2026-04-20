@@ -205,13 +205,13 @@ export default withMermaid(
               { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" },
               { text: "NetworkManager", link: "/networking/NetworkManager" },
               {
-                text: "Протооли мереж",
+                text: "Протоколи мереж",
                 link: "/networking/protocols/README",
                 items: [
-                  { text: "ARP", link: "/netorking/protocols/ARP" },
-                  { text: "IP", link: "/networking/potocols/IP" },
-                  { text: "ICMP", link: "/networking/potocols/ICMP" },
-                  { text: "TCP та UDP", link: "/networking/potocols/TCP and UDP" },
+                  { text: "ARP", link: "/networking/protocols/ARP" },
+                  { text: "IP", link: "/networking/protocols/IP" },
+                  { text: "ICMP", link: "/networking/protocols/ICMP" },
+                  { text: "TCP та UDP", link: "/networking/protocols/TCP and UDP" },
                   { text: "", link: "/networking/potocols/" },
                   { text: "", link: "/networking/potocols/" },
                   { text: "", link: "/networking/potocols/" },
@@ -256,6 +256,26 @@ export default withMermaid(
                   { text: "sar", link: '/performance/sar' }
                 ]
               }
+            ]
+          }
+        ],
+        '/reference/': [
+          {
+            text: "Collections",
+            link: "/reference/collections/README",
+            items: [
+              { text: "Розділ 1: БАЗОВІ КОМАНДИ", link: "/reference/collections/basic-commands" },
+              { text: "Розділ 2: ФАЙЛОВА СИСТЕМА", link: "/reference/collections/file-system" },
+              { text: "Розділ 3: КОРИСТУВАЧІ ТА ГРУПИ", link: "/reference/collections/users" },
+              { text: "Розділ 4: РОБОТА З ТЕКСТОМ", link: "/reference/collections/text" },
+              { text: "Розділ 5: АРХІВИ ТА СТИСНЕННЯ", link: "/reference/collections/archives" },
+              { text: "Розділ 6: МЕНЕДЖЕР ПАКЕТІВ (dnf)", link: "/reference/collections/packet-manager" },
+              { text: "Розділ 7: ІНФОРМАЦІЯ ПРО СИСТЕМУ ТА АПАРАТНЕ ЗАБЕЗПЕЧЕННЯ", link: "/reference/collections/info-system" },
+              { text: "Розділ 8: ПРОЦЕСИ", link: "/reference/collections/processes" },
+              { text: "Розділ 9: СИСТЕМА (systemd, cron, tmux, screen)", link: "/reference/collections/system" },
+              { text: "Розділ 10: МЕРЕЖІ", link: "/reference/collections/network" },
+              { text: "Розділ 11: ВІДДАЛЕНИЙ ДОСТУП", link: "/reference/collections/remote" },
+
             ]
           }
         ]

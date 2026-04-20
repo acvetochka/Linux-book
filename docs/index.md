@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: Мережі
       link: /networking/README.md
+    - theme: alt
+      text: Reference
+      link: /reference/collections/README.md
  
 features:
   - icon: 📘
