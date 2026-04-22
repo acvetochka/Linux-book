@@ -213,7 +213,7 @@ export default withMermaid(
                   { text: "ICMP", link: "/networking/protocols/ICMP" },
                   { text: "TCP та UDP", link: "/networking/protocols/TCP and UDP" },
                   { text: "DNS", link: "/networking/protocols/DNS" },
-                  { text: "", link: "/networking/protocols/" },
+                  { text: "HTTP/HTTPS", link: "/networking/protocols/HTTP-HTTPS" },
                   { text: "", link: "/networking/protocols/" },
                   { text: "", link: "/networking/protocols/" },
                   { text: "", link: "/networking/protocols/" },
