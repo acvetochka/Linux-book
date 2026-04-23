@@ -235,7 +235,9 @@ export default withMermaid(
                   { text: "nmcli", link: "/networking/nmcli" },
                   { text: "dig", link: "/networking/dig" },
                   { text: "lshw", link: "/networking/lshw" },
-                  { text: "dmicode", link: "/networking/dmicode" }
+                  { text: "dmicode", link: "/networking/dmicode" },
+                  { text: "nmap", link: "/networking/nmap" },
+                  { text: "nc", link: "/networking/nc" }
 
                 ]
               }
