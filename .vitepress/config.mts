@@ -204,6 +204,7 @@ export default withMermaid(
               { text: "Основи комп'ютерних мереж", link: "/networking/Основи компютерних мереж" },
               { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" },
               { text: "NetworkManager", link: "/networking/NetworkManager" },
+              { text: "Linux як роутер", link: "/networking/Linux як роутер" },
               {
                 text: "Протоколи мереж",
                 link: "/networking/protocols/README",
@@ -223,6 +224,12 @@ export default withMermaid(
                   { text: "", link: "/networking/protocols/" },
 
 
+                ]
+
+              },
+              {
+                text: "Firewall", items: [
+                  { text: "iptables", link: "/networking/firewall/iptables" }
                 ]
 
               },
