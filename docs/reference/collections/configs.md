@@ -133,19 +133,19 @@ visudo
 
 ## 📌 🧠 Важливі принципи
 
-👉 /etc → конфіг 
-👉 /var → змінні дані  
-👉 /usr → програми  
-👉 /home → користувач  
+👉 `/etc` → конфіг   
+👉 `/var` → змінні дані  
+👉 `/usr` → програми  
+👉 `/home` → користувач  
 
 ## ✅ Підсумок
 
 Це карта системи:
 
-- 👤 користувачі → /etc/passwd
-- 🔐 права → /etc/sudoers
-- 🌐 мережа → /etc/NetworkManager
-- 📦 пакети → /var/lib/rpm
-- ⚙️ сервіси → /etc/systemd
-- 📜 логи → /var/log
-- 🔑 ssh → /etc/ssh
+- 👤 користувачі → `/etc/passwd`
+- 🔐 права → `/etc/sudoers`
+- 🌐 мережа → `/etc/NetworkManager`
+- 📦 пакети → `/var/lib/rpm`
+- ⚙️ сервіси → `/etc/systemd`
+- 📜 логи → `/var/log`
+- 🔑 ssh → `/etc/ssh`
