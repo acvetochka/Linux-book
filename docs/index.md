@@ -20,6 +20,9 @@ hero:
       text: Мережі
       link: /networking/README.md
     - theme: alt
+      text: Сервіси
+      link: /services
+    - theme: alt
       text: Reference
       link: /reference/collections/README.md
  
