@@ -257,7 +257,9 @@ export default withMermaid(
             collapsed: true,
             link: '/services/databases/README.md',
             items: [
-              { text: "Percona", link: '/services/databases/percona' }
+              { text: "Percona Server", link: '/services/databases/percona' },
+              { text: "MySQL", link: '/services/databases/mysql' },
+              { text: "Синтаксис SQL у MySQL", link: '/services/databases/sql-in-mysql' }
             ]
 
           }
@@ -296,8 +298,9 @@ export default withMermaid(
               { text: "Розділ 9: СИСТЕМА (systemd, cron, tmux, screen)", link: "/reference/collections/system" },
               { text: "Розділ 10: МЕРЕЖІ", link: "/reference/collections/network" },
               { text: "Розділ 11: ВІДДАЛЕНИЙ ДОСТУП", link: "/reference/collections/remote" },
-              { text: "Розділ 12: ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: "/reference/collections/configs" },
-              { text: "Розділ 13: КОНФІГУРАЦІЙНІ ФАЙЛИ. МЕРЕЖА (розширено: routing, NAT, firewall)", link: "/reference/collections/network-configs" }
+              { text: "Розділ 12: SQL", link: '/reference/collections/sql' },
+              { text: "ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: "/reference/collections/configs" },
+              { text: "КОНФІГУРАЦІЙНІ ФАЙЛИ. МЕРЕЖА (розширено: routing, NAT, firewall)", link: "/reference/collections/network-configs" }
             ]
           }
         ]
