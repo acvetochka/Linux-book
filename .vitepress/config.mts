@@ -259,7 +259,8 @@ export default withMermaid(
             items: [
               { text: "Percona Server", link: '/services/databases/percona' },
               { text: "MySQL", link: '/services/databases/mysql' },
-              { text: "Синтаксис SQL у MySQL", link: '/services/databases/sql-in-mysql' }
+              { text: "Синтаксис SQL у MySQL", link: '/services/databases/sql-in-mysql' },
+              { text: "Конфігурація MySQL", link: '/services/databases/mysql-config' }
             ]
 
           }
