@@ -261,7 +261,9 @@ export default withMermaid(
               { text: "MySQL", link: '/services/databases/mysql' },
               { text: "Синтаксис SQL у MySQL", link: '/services/databases/sql-in-mysql' },
               { text: "Конфігурація MySQL", link: '/services/databases/mysql-config' },
-              { text: "Користувачі і привілеї в MySQL", link: '/services/databases/mysql-user' }
+              { text: "Користувачі і привілеї в MySQL", link: '/services/databases/mysql-user' },
+              { text: "Резервні копії (Backup) у MySQL", link: '/services/databases/mysql-backup' },
+              { text: "Коментарі в MySQL", link: '/services/databases/mysql-comments' }
             ]
 
           }
