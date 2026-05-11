@@ -263,7 +263,24 @@ export default withMermaid(
               { text: "Конфігурація MySQL", link: '/services/databases/mysql-config' },
               { text: "Користувачі і привілеї в MySQL", link: '/services/databases/mysql-user' },
               { text: "Резервні копії (Backup) у MySQL", link: '/services/databases/mysql-backup' },
-              { text: "Коментарі в MySQL", link: '/services/databases/mysql-comments' }
+              { text: "Коментарі в MySQL", link: '/services/databases/mysql-comments' },
+              {
+                text: "Утиліти MySQL", items: [
+                  {
+                    text: "Backup", collapsed: true, items: [
+                      { text: 'mysqldump', link: '/services/databases/utilites/mysqldump' },
+                      { text: 'xtrabackup', link: '/services/databases/utilites/xtrabackup' },
+                      { text: 'mysqlbinlog', link: '/services/databases/utilites/mysqlbinlog' },
+                    ]
+                  },
+                  {
+                    text: "Administration", collapsed: true, items: [
+                      { text: '', link: '/services/databases/utilites/mysql' },
+                      { text: '', link: '/services/databases/utilites/mysqladmin' },
+                    ]
+                  }
+                ]
+              }
             ]
 
           }
