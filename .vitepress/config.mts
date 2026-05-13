@@ -284,7 +284,12 @@ export default withMermaid(
               },
               {
                 text: "Важливі файли", collapsed: true, items: [
-                  { text: "xtrabackup_checkpoints", link: "/services/databases/files/xtrabackup_checkpoints" }
+                  { text: "xtrabackup_checkpoints", link: "/services/databases/files/xtrabackup_checkpoints" },
+                  { text: "xtrabackup_binlog_info", link: "/services/databases/files/xtrabackup_binlog_info" },
+                  { text: "xtrabackup_info", link: "/services/databases/files/xtrabackup_info" },
+                  { text: "xtrabackup_logfile", link: "/services/databases/files/xtrabackup_logfile" },
+                  { text: "xtrabackup_tablespaces", link: "/services/databases/files/xtrabackup_tablespaces" },
+                  { text: "Додаткові важливі файли XtraBackup", link: "/services/databases/files/Додаткові важливі файли XtraBackup" }
 
                 ]
               }

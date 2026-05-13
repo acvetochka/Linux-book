@@ -437,6 +437,17 @@ systemctl start mysqld
 | Incremental backup | ✔️          |
 | Small dev DB       | ⚠️ overkill |
 
+## Найважливіші файли XtraBackup
+| Файл                                                                                                                          | Призначення             |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| [`xtrabackup_checkpoints`](/services/databases/files/xtrabackup_checkpoints)                                                  | LSN metadata            |
+| [`xtrabackup_binlog_info`](/services/databases/files/xtrabackup_binlog_info)                                                  | binlog coordinates      |
+| [`xtrabackup_info`](/services/databases/files/xtrabackup_info)                                                                | backup metadata         |
+| [`xtrabackup_logfile`](/services/databases/files/xtrabackup_logfile)                                                          | redo log copy           |
+| [`xtrabackup_tablespaces`](/services/databases/files/xtrabackup_tablespaces)                                                  | tablespace mapping      |
+| [`backup-my.cnf`](http://localhost:5173/services/databases/files/Додаткові%20важливі%20файли%20XtraBackup.html#backup-my-cnf) | MySQL settings snapshot |
+
+
 ## Висновок
 
 👉 Percona XtraBackup:
