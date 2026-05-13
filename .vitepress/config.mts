@@ -281,6 +281,12 @@ export default withMermaid(
                     ]
                   }
                 ]
+              },
+              {
+                text: "Важливі файли", collapsed: true, items: [
+                  { text: "xtrabackup_checkpoints", link: "/services/databases/files/xtrabackup_checkpoints" }
+
+                ]
               }
             ]
 
