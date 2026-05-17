@@ -289,7 +289,8 @@ export default withMermaid(
                   { text: "xtrabackup_info", link: "/services/databases/files/xtrabackup_info" },
                   { text: "xtrabackup_logfile", link: "/services/databases/files/xtrabackup_logfile" },
                   { text: "xtrabackup_tablespaces", link: "/services/databases/files/xtrabackup_tablespaces" },
-                  { text: "Додаткові важливі файли XtraBackup", link: "/services/databases/files/Додаткові важливі файли XtraBackup" }
+                  { text: "Додаткові важливі файли XtraBackup", link: "/services/databases/files/Додаткові важливі файли XtraBackup" },
+                  { text: "binlog", link: "/services/databases/files/binlog.md" }
 
                 ]
               }
