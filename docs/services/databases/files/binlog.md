@@ -13,13 +13,15 @@
 
 Binary log використовується для:
 
-Призначення	Опис
-Replication	передача змін на replica
-PITR	Point-In-Time Recovery
-Audit	історія змін
-Recovery	відновлення після backup
-Incremental recovery	replay змін
-Де знаходиться
+| Призначення          | Опис                     |
+| -------------------- | ------------------------ |
+| Replication          | передача змін на replica |
+| PITR                 | Point-In-Time Recovery   |
+| Audit                | історія змін             |
+| Recovery             | відновлення після backup |
+| Incremental recovery | replay змін              |
+
+## Де знаходиться
 
 Зазвичай:
 ```
