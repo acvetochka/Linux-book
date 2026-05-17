@@ -333,6 +333,7 @@ export default withMermaid(
               { text: "Розділ 10: МЕРЕЖІ", link: "/reference/collections/network" },
               { text: "Розділ 11: ВІДДАЛЕНИЙ ДОСТУП", link: "/reference/collections/remote" },
               { text: "Розділ 12: SQL", link: '/reference/collections/sql' },
+              { text: "Розділ 13: MySQL / Percona Server на Linux", link: '/reference/collections/mysql' },
               { text: "ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: "/reference/collections/configs" },
               { text: "КОНФІГУРАЦІЙНІ ФАЙЛИ. МЕРЕЖА (розширено: routing, NAT, firewall)", link: "/reference/collections/network-configs" }
             ]
