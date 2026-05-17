@@ -265,6 +265,7 @@ export default withMermaid(
               { text: "Резервні копії (Backup) у MySQL", link: '/services/databases/mysql-backup' },
               { text: "Коментарі в MySQL", link: '/services/databases/mysql-comments' },
               { text: "MySQL без пароля root", link: '/services/databases/mysql-without-pass' },
+              { text: "Firewall для MySQL через iptables", link: '/services/databases/mysql-firewall' },
               {
                 text: "Утиліти MySQL", items: [
                   {

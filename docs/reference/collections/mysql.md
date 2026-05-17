@@ -168,6 +168,8 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --list-all
 ```
 
+[Firewall для MySQL через iptables](/services/databases/mysql-firewall)
+
 ## 8. SELinux
 Тимчасово вимкнути
 ```bash
