@@ -277,8 +277,8 @@ export default withMermaid(
                   },
                   {
                     text: "Administration", collapsed: true, items: [
-                      { text: '', link: '/services/databases/utilites/mysql' },
-                      { text: '', link: '/services/databases/utilites/mysqladmin' },
+                      { text: 'mysql', link: '/services/databases/utilites/admin/mysql' },
+                      { text: 'mysqladmin', link: '/services/databases/utilites/admin/mysqladmin' },
                     ]
                   }
                 ]
