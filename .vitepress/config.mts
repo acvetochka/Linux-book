@@ -4,6 +4,8 @@ import { withMermaid } from "vitepress-plugin-mermaid"
 import { nav } from './configs/nav'
 import { basicsSidebar } from './configs/sidebar/basics'
 import { filesSedebar } from './configs/sidebar/files'
+import { systemSidebar } from './configs/sidebar/system'
+import { networkSidebar } from './configs/sidebar/networking'
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(
@@ -29,101 +31,104 @@ export default withMermaid(
       sidebar: {
         '/basics': basicsSidebar,
         '/files': filesSedebar,
-        '/system/': [
-          { text: "Система та процеси", link: "/system" },
-          {
-            text: "Процеси",
-            collapsed: true,
-            link: '/system/processes/README.md',
-            items: [
-              { text: "1. Основи процесів", link: "/system/processes/1. Основи процесів" },
-              { text: "2. Типи процесів у Linux", link: "/system/processes/2. Типи процесів у Linux" },
-              { text: "3. Життєвий цикл процесу в Linux", link: "/system/processes/3. Життєвий цикл процесу в Linux" },
-              { text: "Статуси процесів у Linux", link: "/system/processes/Statuses" }
-            ]
-          },
-          {
-            text: "Система",
-            link: '/system/system/README.md',
-            collapsed: true,
-            items: [
-              {
-                text: "systemd", items: [
-                  { text: "systemd", link: "/system/system/systemd" },
-                  { text: "Unit-файли", link: "/system/system/Unit-файли" },
-                  { text: "Типи unit-файлів", link: "/system/system/Типи unit-файлів" }
-                ]
-              },
-              {
-                text: "Мультиплексори", items: [
-                  { text: "screen", link: "/system/system/screen" },
-                  { text: "tmux", link: "/system/system/tmux" }
+        '/system': systemSidebar,
+        '/networking': networkSidebar,
+        // '/system/': [
+        //   { text: "Система та процеси", link: "/system" },
+        //   {
+        //     text: "Процеси",
+        //     collapsed: true,
+        //     link: '/system/processes/README.md',
+        //     items: [
+        //       { text: "1. Основи процесів", link: "/system/processes/1. Основи процесів" },
+        //       { text: "2. Типи процесів у Linux", link: "/system/processes/2. Типи процесів у Linux" },
+        //       { text: "3. Життєвий цикл процесу в Linux", link: "/system/processes/3. Життєвий цикл процесу в Linux" },
+        //       { text: "Статуси процесів у Linux", link: "/system/processes/Statuses" }
+        //     ]
+        //   },
+        //   {
+        //     text: "Система",
+        //     link: '/system/system/README.md',
+        //     collapsed: true,
+        //     items: [
+        //       {
+        //         text: "systemd", items: [
+        //           { text: "systemd", link: "/system/system/systemd" },
+        //           { text: "Unit-файли", link: "/system/system/Unit-файли" },
+        //           { text: "Типи unit-файлів", link: "/system/system/Типи unit-файлів" }
+        //         ]
+        //       },
+        //       {
+        //         text: "Мультиплексори", items: [
+        //           { text: "screen", link: "/system/system/screen" },
+        //           { text: "tmux", link: "/system/system/tmux" }
 
-                ]
-              },
-              {
-                text: "Плануваальники задач", items: [
-                  { text: "cron", link: "/system/system/cron" },
-                  { text: "at", link: "/system/system/at" }
-                ]
-              }
-            ]
-          }
-        ],
-        '/networking/': [
-          { text: "Networking", link: '/networking/README.md' },
-          // items: [
-          { text: "Основи комп'ютерних мереж", link: "/networking/Основи компютерних мереж" },
-          { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" },
-          { text: "NetworkManager", link: "/networking/NetworkManager" },
-          { text: "Linux як роутер", link: "/networking/Linux як роутер" },
-          {
-            text: "Протоколи мереж",
-            collapsed: true,
-            link: "/networking/protocols/README",
-            items: [
-              { text: "ARP", link: "/networking/protocols/ARP" },
-              { text: "IP", link: "/networking/protocols/IP" },
-              { text: "ICMP", link: "/networking/protocols/ICMP" },
-              { text: "TCP та UDP", link: "/networking/protocols/TCP and UDP" },
-              { text: "DNS", link: "/networking/protocols/DNS" },
-              { text: "HTTP/HTTPS", link: "/networking/protocols/HTTP-HTTPS" },
-              { text: "", link: "/networking/protocols/" },
-              { text: "", link: "/networking/protocols/" },
-              { text: "", link: "/networking/protocols/" },
-              { text: "", link: "/networking/protocols/" },
-              { text: "", link: "/networking/protocols/" },
-              { text: "", link: "/networking/protocols/" },
-              { text: "", link: "/networking/protocols/" },
+        //         ]
+        //       },
+        //       {
+        //         text: "Плануваальники задач", items: [
+        //           { text: "cron", link: "/system/system/cron" },
+        //           { text: "at", link: "/system/system/at" }
+        //         ]
+        //       }
+        //     ]
+        //   }
+        // ],
+
+        // '/networking/': [
+        //   { text: "Networking", link: '/networking/README.md' },
+        //   // items: [
+        //   { text: "Основи комп'ютерних мереж", link: "/networking/Основи компютерних мереж" },
+        //   { text: "Налаштування та контроль мережі", link: "/networking/Налаштування та контроль мережі" },
+        //   { text: "NetworkManager", link: "/networking/NetworkManager" },
+        //   { text: "Linux як роутер", link: "/networking/Linux як роутер" },
+        //   {
+        //     text: "Протоколи мереж",
+        //     collapsed: true,
+        //     link: "/networking/protocols/README",
+        //     items: [
+        //       { text: "ARP", link: "/networking/protocols/ARP" },
+        //       { text: "IP", link: "/networking/protocols/IP" },
+        //       { text: "ICMP", link: "/networking/protocols/ICMP" },
+        //       { text: "TCP та UDP", link: "/networking/protocols/TCP and UDP" },
+        //       { text: "DNS", link: "/networking/protocols/DNS" },
+        //       { text: "HTTP/HTTPS", link: "/networking/protocols/HTTP-HTTPS" },
+        //       { text: "", link: "/networking/protocols/" },
+        //       { text: "", link: "/networking/protocols/" },
+        //       { text: "", link: "/networking/protocols/" },
+        //       { text: "", link: "/networking/protocols/" },
+        //       { text: "", link: "/networking/protocols/" },
+        //       { text: "", link: "/networking/protocols/" },
+        //       { text: "", link: "/networking/protocols/" },
 
 
-            ]
+        //     ]
 
-          },
-          {
-            text: "Firewall", items: [
-              { text: "iptables", link: "/networking/firewall/iptables" }
-            ]
+        //   },
+        //   {
+        //     text: "Firewall", items: [
+        //       { text: "iptables", link: "/networking/firewall/iptables" }
+        //     ]
 
-          },
-          {
-            text: "Утиліти",
-            collapsed: true,
-            items: [
-              { text: "ip", link: "/networking/ip" },
-              { text: "traceroute", link: "/networking/traceroute" },
-              { text: "ss", link: "/networking/ss" },
-              { text: "tcpdump", link: "/networking/tcpdump" },
-              { text: "nmcli", link: "/networking/nmcli" },
-              { text: "dig", link: "/networking/dig" },
-              { text: "lshw", link: "/networking/lshw" },
-              { text: "dmicode", link: "/networking/dmicode" },
-              { text: "nmap", link: "/networking/nmap" },
-              { text: "nc", link: "/networking/nc" }
+        //   },
+        //   {
+        //     text: "Утиліти",
+        //     collapsed: true,
+        //     items: [
+        //       { text: "ip", link: "/networking/ip" },
+        //       { text: "traceroute", link: "/networking/traceroute" },
+        //       { text: "ss", link: "/networking/ss" },
+        //       { text: "tcpdump", link: "/networking/tcpdump" },
+        //       { text: "nmcli", link: "/networking/nmcli" },
+        //       { text: "dig", link: "/networking/dig" },
+        //       { text: "lshw", link: "/networking/lshw" },
+        //       { text: "dmicode", link: "/networking/dmicode" },
+        //       { text: "nmap", link: "/networking/nmap" },
+        //       { text: "nc", link: "/networking/nc" }
 
-            ]
-          }
-        ],
+        //     ]
+        //   }
+        // ],
         '/services/': [
           { text: 'Сервіси', link: '/services' },
           {
@@ -216,7 +221,8 @@ export default withMermaid(
               { text: "MySQL / Percona Server на Linux", link: '/reference/collections/mysql' },
               { text: "Загальна таблиця порівняння Apache в Debian vs RHEL", link: "/reference/collections/apache" },
               { text: "ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: "/reference/collections/configs" },
-              { text: "КОНФІГУРАЦІЙНІ ФАЙЛИ. МЕРЕЖА (розширено: routing, NAT, firewall)", link: "/reference/collections/network-configs" }
+              { text: "КОНФІГУРАЦІЙНІ ФАЙЛИ. МЕРЕЖА (розширено: routing, NAT, firewall)", link: "/reference/collections/network-configs" },
+              { text: "Конфігураційні файли Apache (RHEL)", link: "/reference/collections/apache-configs" }
             ]
           }
         ]
