@@ -11,6 +11,22 @@ export default withMermaid(
 
     title: "Linux Book",
     // description: "Linux Book",
+
+    // Додаємо аналітику
+    head: [
+      [
+        'script',
+        { async: '', src: 'https://googletagmanager.com/gtag/js?id=G-MMPBKKPGWX"' }
+      ],
+      [
+        'script',
+        {},
+        `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MMPBKKPGWX');`
+      ]
+    ],
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
       outline: [2, 4],
