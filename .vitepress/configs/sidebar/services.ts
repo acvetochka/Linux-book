@@ -1,4 +1,5 @@
-import { inv_trapezoid } from "mermaid/dist/rendering-util/rendering-elements/shapes/invertedTrapezoid.js";
+const databases = '/services/databases';
+const webservices = '/services/webservices'
 
 export const servicesSidebar = [
   { text: 'Сервіси', link: '/services' },
@@ -7,50 +8,51 @@ export const servicesSidebar = [
     collapsed: true,
     link: '/services/databases/README.md',
     items: [
-      { text: "Percona Server", link: '/services/databases/percona' },
-      { text: "MySQL", link: '/services/databases/mysql' },
-      { text: "Синтаксис SQL у MySQL", link: '/services/databases/sql-in-mysql' },
-      { text: "Конфігурація MySQL", link: '/services/databases/mysql-config' },
-      { text: "Користувачі і привілеї в MySQL", link: '/services/databases/mysql-user' },
-      { text: "Резервні копії (Backup) у MySQL", link: '/services/databases/mysql-backup' },
-      { text: "Коментарі в MySQL", link: '/services/databases/mysql-comments' },
-      { text: "MySQL без пароля root", link: '/services/databases/mysql-without-pass' },
-      { text: "Firewall для MySQL через iptables", link: '/services/databases/mysql-firewall' },
+      { text: "Percona Server", link: `${databases}/percona` },
+      { text: "MySQL", link: `${databases}/mysql` },
+      { text: "Синтаксис SQL у MySQL", link: `${databases}/sql-in-mysql` },
+      { text: "Конфігурація MySQL", link: `${databases}/mysql-config` },
+      { text: "Користувачі і привілеї в MySQL", link: `${databases}/mysql-user` },
+      { text: "Резервні копії (Backup) у MySQL", link: `${databases}/mysql-backup` },
+      { text: "Коментарі в MySQL", link: `${databases}/mysql-comments` },
+      { text: "MySQL без пароля root", link: `${databases}/mysql-without-pass` },
+      { text: "Firewall для MySQL через iptables", link: `${databases}/mysql-firewall` },
       {
         text: "Утиліти MySQL", items: [
           {
             text: "Backup", collapsed: true, items: [
-              { text: 'mysqldump', link: '/services/databases/utilites/mysqldump' },
-              { text: 'xtrabackup', link: '/services/databases/utilites/xtrabackup' },
-              { text: 'mysqlbinlog', link: '/services/databases/utilites/mysqlbinlog' },
+              { text: 'mysqldump', link: `${databases}/utilites/mysqldump` },
+              { text: 'xtrabackup', link: `${databases}/utilites/xtrabackup` },
+              { text: 'mysqlbinlog', link: `${databases}/utilites/mysqlbinlog` },
             ]
           },
           {
             text: "Administration", collapsed: true, items: [
-              { text: 'mysql', link: '/services/databases/utilites/admin/mysql' },
-              { text: 'mysqladmin', link: '/services/databases/utilites/admin/mysqladmin' },
+              { text: 'mysql', link: `${databases}/utilites/admin/mysql` },
+              { text: 'mysqladmin', link: `${databases}/utilites/admin/mysqladmin` },
             ]
           }
         ]
       },
       {
         text: "Важливі файли", collapsed: true, items: [
-          { text: "xtrabackup_checkpoints", link: "/services/databases/files/xtrabackup_checkpoints" },
-          { text: "xtrabackup_binlog_info", link: "/services/databases/files/xtrabackup_binlog_info" },
-          { text: "xtrabackup_info", link: "/services/databases/files/xtrabackup_info" },
-          { text: "xtrabackup_logfile", link: "/services/databases/files/xtrabackup_logfile" },
-          { text: "xtrabackup_tablespaces", link: "/services/databases/files/xtrabackup_tablespaces" },
-          { text: "Додаткові важливі файли XtraBackup", link: "/services/databases/files/Додаткові важливі файли XtraBackup" },
-          { text: "binlog", link: "/services/databases/files/binlog.md" }
+          { text: "xtrabackup_checkpoints", link: `${databases}/files/xtrabackup_checkpoints` },
+          { text: "xtrabackup_binlog_info", link: `${databases}/files/xtrabackup_binlog_info` },
+          { text: "xtrabackup_info", link: `${databases}/files/xtrabackup_info` },
+          { text: "xtrabackup_logfile", link: `${databases}/files/xtrabackup_logfile` },
+          { text: "xtrabackup_tablespaces", link: `${databases}/files/xtrabackup_tablespaces` },
+          { text: "Додаткові важливі файли XtraBackup", link: `${databases}/files/Додаткові важливі файли XtraBackup` },
+          { text: "binlog", link: `${databases}/files/binlog.md` }
 
         ]
-      }
+      },
+      { text: "PostgreSQL ", link: `${databases}/postgresql` }
     ]
 
   },
   {
     text: "Webservices", collapsed: true, items: [
-      { text: "Apache HTTP Server (Apache httpd)", link: "/services/webservices/apache" }
+      { text: "Apache HTTP Server (Apache httpd)", link: `${webservices}/apache` }
     ]
   },
   {

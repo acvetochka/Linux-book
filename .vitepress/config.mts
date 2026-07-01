@@ -22,9 +22,9 @@ export default withMermaid(
         'script',
         {},
         `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MMPBKKPGWX');`
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MMPBKKPGWX');`
       ]
     ],
     themeConfig: {
