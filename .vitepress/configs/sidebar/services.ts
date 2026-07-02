@@ -46,7 +46,8 @@ export const servicesSidebar = [
 
         ]
       },
-      { text: "PostgreSQL ", link: `${databases}/postgresql` }
+      { text: "PostgreSQL", link: `${databases}/postgresql` },
+      { text: "SQL Server", link: `${databases}/sql-server` }
     ]
 
   },
