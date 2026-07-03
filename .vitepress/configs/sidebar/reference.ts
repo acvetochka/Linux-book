@@ -1,9 +1,11 @@
+const collections = '/reference/collections'
+
 export const referenceSidebar = [
   {
     text: "Collections",
     link: "/reference/collections/README",
     items: [
-      { text: "Базові команди", link: "/reference/collections/basic-commands" },
+      { text: "Базові команди", link: `${collections}/basic-commands` },
       { text: "Файлова система", link: "/reference/collections/file-system" },
       { text: "Користувачі та групи", link: "/reference/collections/users" },
       { text: "Робота з текстом", link: "/reference/collections/text" },
@@ -16,6 +18,7 @@ export const referenceSidebar = [
       { text: "Віддалений доступ", link: "/reference/collections/remote" },
       { text: "SQL", link: '/reference/collections/sql' },
       { text: "MySQL / Percona Server на Linux", link: '/reference/collections/mysql' },
+      { text: "Повне порівняння найпоширеніших SQL-серверів", link: `/db-differents` },
       { text: "Загальна таблиця порівняння Apache в Debian vs RHEL", link: "/reference/collections/apache" },
       { text: "Конфігураційні файли Apache (RHEL)", link: "/reference/collections/apache-configs" },
       { text: "ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: "/reference/collections/configs" },
