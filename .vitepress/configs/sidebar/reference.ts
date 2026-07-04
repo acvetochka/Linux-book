@@ -19,7 +19,7 @@ export const referenceSidebar = [
       { text: "SQL", link: `${collections}/sql` },
       { text: "MySQL / Percona Server на Linux", link: `${collections}/mysql` },
       { text: "Повне порівняння найпоширеніших SQL-серверів", link: `${collections}/db-differents` },
-      { text: "Порівняння синтаксису та команд SQL-серверів", link: `${collections}/db-syntax` }
+      { text: "Порівняння синтаксису та команд SQL-серверів", link: `${collections}/db-syntax` },
       { text: "Загальна таблиця порівняння Apache в Debian vs RHEL", link: `${collections}/apache` },
       { text: "Конфігураційні файли Apache (RHEL)", link: `${collections}/apache-configs` },
       { text: "ВАЖЛИВІ КОНФІГУРАЦІЙНІ ФАЙЛИ", link: `${collections}/configs` },
