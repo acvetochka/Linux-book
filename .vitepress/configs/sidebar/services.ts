@@ -1,5 +1,6 @@
 const databases = '/services/databases';
-const webservices = '/services/webservices'
+const webservices = '/services/webservices';
+const collections = '/reference/collections'
 
 export const servicesSidebar = [
   { text: 'Сервіси', link: '/services' },
@@ -60,15 +61,16 @@ export const servicesSidebar = [
     text: "Колекції модуля", items: [
       {
         text: "Databases", collapsed: true, items: [
-          { text: "SQL", link: '/reference/collections/sql' },
-          { text: "MySQL / Percona Server на Linux", link: '/reference/collections/mysql' },
-
+          { text: "SQL", link: `${collections}/sql` },
+          { text: "MySQL / Percona Server на Linux", link: `${collections}/mysql` },
+          { text: "Повне порівняння найпоширеніших SQL-серверів", link: `${collections}/db-differents` },
+          { text: "Порівняння синтаксису та команд SQL-серверів", link: `${collections}/db-syntax` },
         ]
       },
       {
         text: "Webservers", collapsed: true, items: [
-          { text: "Загальна таблиця порівняння Apache в Debian vs RHEL", link: "/reference/collections/apache" },
-          { text: "Конфігураційні файли Apache (RHEL)", link: "/reference/collections/apache-configs" },
+          { text: "Загальна таблиця порівняння Apache в Debian vs RHEL", link: `${collections}/apache` },
+          { text: "Конфігураційні файли Apache (RHEL)", link: `${collections}/apache-configs` },
 
         ]
       }

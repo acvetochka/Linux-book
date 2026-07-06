@@ -5,11 +5,13 @@ import { networkSidebar } from "./networking";
 import { referenceSidebar } from "./reference";
 import { performanceSidebar } from "./performance";
 import { servicesSidebar } from "./services";
+import { usersSidebar } from "./users";
 
 export const sidebar = {
   '/basics': basicsSidebar,
   '/files': filesSedebar,
   '/system': systemSidebar,
+  '/users': usersSidebar,
   '/networking': networkSidebar,
   '/services': servicesSidebar,
   '/performance': performanceSidebar,
