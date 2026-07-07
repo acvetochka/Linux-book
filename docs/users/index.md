@@ -7,7 +7,7 @@ next:
   link: /users/users/users-and-groups
 ---
 
-# 10_Users
+## 10_Users
 
 Розділ присвячений **керуванню користувачами системи**.
 
@@ -21,7 +21,7 @@ next:
 
 ---
 
-# 11_Permissions
+## 11_Permissions
 
 Розділ пояснює **систему прав доступу Linux**.
 
